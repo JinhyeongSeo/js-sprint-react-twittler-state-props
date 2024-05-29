@@ -11,14 +11,16 @@ const Tweet = ({ tweet }) => {
       </div>
       <div className="tweet__content">
         <div className="tweet__userInfo">
-          <div className="tweet__userInfo--wrapper">
-            {/* TODO : 유져 이름이 있어야 합니다. */}
-            {/* TODO : 트윗 생성 일자가 있어야 합니다. parsedDate를 이용하세요. */}
+            <div className="tweet__userInfo--wrapper">
+                {/* TODO : 유져 이름이 있어야 합니다. */}
+                {/* TODO : 트윗 생성 일자가 있어야 합니다. parsedDate를 이용하세요. */}
+                <span className="tweet__username">{tweet.username}</span>
+                <span className="tweet__createdAt">{tweet.createdAt}</span>
+            </div>
+        </div>
+          <div className="tweet__message">
+              <div className="tweet__message">{tweet.content}</div>
           </div>
-        </div>
-        <div className="tweet__message">
-          TODO : 트윗 메세지가 있어야 합니다.
-        </div>
       </div>
     </li>
   );
